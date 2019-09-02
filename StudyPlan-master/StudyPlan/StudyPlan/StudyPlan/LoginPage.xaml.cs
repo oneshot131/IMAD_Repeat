@@ -15,8 +15,6 @@ namespace StudyPlan
             InitializeComponent();
         }
 
-       
-
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
             bool isUserEmpty =
@@ -30,9 +28,8 @@ namespace StudyPlan
             }
             else
             {
-                //all conditions met to navigate forward
                 Navigation.PushAsync(new HomePage());
-
+                // When all conditions are met, will navigaet forward
             }
         }
 

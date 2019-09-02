@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
          
-            <Grid Grid.Row="0" BackgroundColor="Gainsboro">
+            <Grid Grid.Row="0" BackgroundColor="LightGreen">
 
             <Label 
                 x:Name="Reg" 

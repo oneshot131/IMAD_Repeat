@@ -4,9 +4,6 @@
             xmlns:local="clr-namespace:StudyPlan"
              x:Class="StudyPlan.HomePage">
 
-    <!-- need to see the local namespace
-    Login - solution name
-    -->
     <local:Tasks Title="Tasks"/>
     <local:Calendar Title=" Calendar"/>
     <local:Exams Title="Exams"/>
