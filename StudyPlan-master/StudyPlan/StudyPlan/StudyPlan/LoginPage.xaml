@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Login"
+             x:Class="StudyPlan.LoginPage"
+             BackgroundColor="Green">
+
+    <StackLayout Margin="20"
+                  >
+        <Label Text="Welcome to StudyPlan" 
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+        <Entry HorizontalOptions="Center"
+               x:Name="entryUsername"
+               Keyboard="Email"
+               Placeholder="Username"
+               PlaceholderColor="Black"/>
+        <Entry
+            HorizontalOptions="Center"
+            x:Name="entryPassword"
+            IsPassword="True"
+            Placeholder="Password"
+            PlaceholderColor="Black"/>
+        <Button
+            Text="Login"
+            Margin="25, 10, 25, 0 "
+            x:Name="btnChangeLabel"
+            Clicked="btnLogin_Clicked"
+            VerticalOptions="CenterAndExpand"
+            BackgroundColor="Black"
+            TextColor="White"
+            />
+        <Button
+            Text="Register"
+            Margin="25, 10, 25, 0 "
+            x:Name="btnNotRegisteredLabel"
+            Clicked="btnNotRegistered_Clicked"
+            VerticalOptions="CenterAndExpand"
+            BackgroundColor="Black"
+            TextColor="White"
+            />
+
+
+
+    </StackLayout>
+
+</ContentPage>

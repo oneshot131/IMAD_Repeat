@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="StudyPlan.Registration"
+             BackgroundColor="Aqua">
+
+    <ContentPage.Content>
+        <StackLayout>
+         
+            <Grid Grid.Row="0" BackgroundColor="Gainsboro">
+
+            <Label 
+                x:Name="Reg" 
+                Text="Registration Form"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center" 
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"  
+                FontSize="30" FontFamily="Black"
+                FontAttributes="Italic"
+            ></Label>
+
+            </Grid>
+            <Entry HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   x:Name="registerUsername"
+                   WidthRequest="300"
+                   Placeholder="Enter New Username"
+                   PlaceholderColor="Black"/>
+            <Entry
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                x:Name="registerPassword"
+                WidthRequest="300"
+                Placeholder="Enter New Password"
+                PlaceholderColor="Black"/>
+            <Button
+                Text="Register"
+                x:Name="btnRegister"
+                Clicked="btnRegister_Clicked"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Black"
+                HeightRequest="70"
+                MinimumWidthRequest="230"
+                TextColor="White"
+            />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
